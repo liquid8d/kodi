@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="plugin.video.BBCALiveFeeds"
+  id="plugin.video.bbcalivefeeds"
   name="Big Brother Canada Live Feeds"
   version="1.0.0"
   provider-name="liquid8d">
@@ -14,7 +14,7 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Big Brother Canada Live Streams</summary>
-    <description lang="en">Play Big Brother Canada Live Streams</description>
+    <description lang="en">Watch the live feeds for Big Brother Canada!</description>
     <platform>all</platform>
 	<email>liquid8d@gmail.com</email>
   </extension>
