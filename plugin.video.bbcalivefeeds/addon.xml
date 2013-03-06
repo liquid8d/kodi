@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+  id="plugin.video.BBCALiveFeeds"
+  name="Big Brother Canada Live Feeds"
+  version="1.0.0"
+  provider-name="liquid8d">
+  <requires>
+   <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension 
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Big Brother Canada Live Streams</summary>
+    <description lang="en">Play Big Brother Canada Live Streams</description>
+    <platform>all</platform>
+	<email>liquid8d@gmail.com</email>
+  </extension>
+</addon>
