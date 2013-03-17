@@ -44,8 +44,12 @@ def addLink(name,url,iconimage):
 #addLink('Feeds', 'http://ichunk.livestream.com/212.54/livestreamiphone/bigbrothercanada4-secretlocationdev000020130304-182952-high_1756/playlist.m3u8?wowzasessionid=133706173', 'DefaultVideo.png')
 
 addLink('Camera1', 'http://xbigbrothercanada1x.api.channel.livestream.com/3.0/playlist.m3u8', 'DefaultVideo.png')
+addLink('Camera1 ALT', 'rtsp://mobilestr.livestream.com/livestreamiphone/bigbrothercanada1', 'DefaultVideo.png')
 addLink('Camera2', 'http://xbigbrothercanada2x.api.channel.livestream.com/3.0/playlist.m3u8', 'DefaultVideo.png')
+addLink('Camera2 ALT', 'rtsp://mobilestr.livestream.com/livestreamiphone/bigbrothercanada2', 'DefaultVideo.png')
 addLink('Camera3', 'http://xbigbrothercanada3x.api.channel.livestream.com/3.0/playlist.m3u8', 'DefaultVideo.png')
+addLink('Camera3 ALT', 'rtsp://mobilestr.livestream.com/livestreamiphone/bigbrothercanada3', 'DefaultVideo.png')
 addLink('Camera4', 'http://xbigbrothercanada4x.api.channel.livestream.com/3.0/playlist.m3u8', 'DefaultVideo.png')
+addLink('Camera4 ALT', 'rtsp://mobilestr.livestream.com/livestreamiphone/bigbrothercanada4', 'DefaultVideo.png')
 
 xbmcplugin.endOfDirectory(int(sys.argv[1]))

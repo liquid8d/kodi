@@ -1,2 +1,5 @@
+[b]Version 1.0.1[/b]
+ - Added ALT links (mobile) since some have been having problems
+ 
 [b]Version 1.0.0[/b]
  - Initial version
