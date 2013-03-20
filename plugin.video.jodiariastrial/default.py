@@ -35,6 +35,6 @@ def addLink(name,url,iconimage):
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=url,listitem=liz)
         return ok
 
-addLink('420p (640x360 @700k)', 'http://b_kpnx-f.akamaihd.net/KPNX_1_1_700@72415?videoId=1724204566001&lineUpId=&pubId=29901534001&playerId=1659202266001&affiliateId=&accountid=29901534001&v=2.11.3&fp=WIN%2011%2C6%2C602%2C171&r=XXXXX&g=XXXXXXXXXXXX&v=2.11.3&fp=WIN%2011,6,602,171&r=FFVXN&g=DJPKDWELYOYC', 'DefaultVideo.png')
-addLink('720p (1280x720 @1500k)', 'http://b_kpnx-f.akamaihd.net/KPNX_1_1_1500@72415?videoId=1724204566001&lineUpId=&pubId=29901534001&playerId=1659202266001&affiliateId=&accountid=29901534001&v=2.11.3&fp=WIN%2011%2C6%2C602%2C180&r=XXXXX&g=XXXXXXXXXXXX&v=2.11.3&fp=WIN%2011,6,602,180&r=KPWQU&g=SHCFVXJLVNSS', 'DefaultVideo.png')
+addLink('420p (640x360 @700k)', 'http://b_kpnx-f.akamaihd.net//KPNX_1_1_700@72415?videoId=1724204566001&lineUpId=&pubId=29901534001&playerId=1659202266001&affiliateId=&accountid=29901534001&v=2.11.3&fp=WIN%2011%2C6%2C602%2C180&r=XXXXX&g=XXXXXXXXXXXX&v=2.11.3&fp=WIN%2011,6,602,180&r=WINTV&g=CFGLLZSHLTVT', 'DefaultVideo.png')
+addLink('720p (1280x720 @1500k)', 'http://b_kpnx-f.akamaihd.net/KPNX_1_1_1500@72415?videoId=1724204566001&lineUpId=&pubId=29901534001&playerId=1659202266001&affiliateId=&accountid=29901534001&v=2.11.3&fp=WIN%2011%2C6%2C602%2C180&r=XXXXX&g=XXXXXXXXXXXX', 'DefaultVideo.png')
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
