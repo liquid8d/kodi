@@ -22,27 +22,6 @@
 </addon>
 
 <addon
-  id="plugin.video.bblivefeeds"
-  name="Big Brother Live Feeds"
-  version="1.0.0"
-  provider-name="liquid8d">
-  <requires>
-   <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension
-    point="xbmc.python.pluginsource"
-    library="default.py">
-   <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Big Brother Live Streams</summary>
-    <description lang="en">Watch the live feeds for Big Brother!</description>
-    <platform>all</platform>
-	<email>liquid8d@gmail.com</email>
-  </extension>
-</addon>
-
-<addon
   id="plugin.video.jodiariastrial"
   name="Jodi Arias Trial"
   version="1.0.2"
