@@ -1,3 +1,5 @@
-Initial version
+[b]Version 1.0.1[/b]
+ - Added Exit button
 
-Just getting started...
+[b]Version 1.0.0[/b]
+ - Initial version
