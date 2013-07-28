@@ -22,6 +22,27 @@
 </addon>
 
 <addon
+  id="plugin.video.bblivefeeds"
+  name="Big Brother Live Feeds"
+  version="1.0.0"
+  provider-name="liquid8d">
+  <requires>
+   <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Big Brother Live Streams</summary>
+    <description lang="en">Watch the live feeds for Big Brother!</description>
+    <platform>all</platform>
+	<email>liquid8d@gmail.com</email>
+  </extension>
+</addon>
+
+<addon
   id="plugin.video.jodiariastrial"
   name="Jodi Arias Trial"
   version="1.0.2"
@@ -52,6 +73,29 @@
 		<summary>Install liquid8d's Addons</summary>
 		<description>Download and install addons by liquid8d</description>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon
+	id="script.bigbrother"
+	version="1.0.1"
+	name="Big Brother Live Feeds"
+	provider-name="liquid8d">
+
+	<requires>
+		<import addon="xbmc.python" version="2.0"/>
+	</requires>
+
+	<extension point="xbmc.python.script"
+		defaultresolution="720p"
+		defaultresolutionwide="720p"
+		library="default.py"/>
+
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<minversion>35647</minversion>
+		<summary lang="en">Watch Big Brother Live Feeds</summary>
+		<description lang="en">Watch Big Brother Live Feeds with camera switching, flashbacks and more! *Requires valid CBS subscription.</description>
 	</extension>
 </addon>
 </addons>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <string id="111">CBS Username</string>
+    <string id="112">CBS Password</string>
+
+    <string id="140">Season</string>
+    <string id="141">15</string>
+    <string id="142">14</string>
+    <string id="142">13</string>
+    <string id="143">12</string>
+
+    <string id="150">Camera</string>
+    <string id="151">Cam 1</string>
+    <string id="152">Cam 2</string>
+    <string id="153">Cam 3</string>
+    <string id="154">Cam 4</string>
+    <string id="155">Quad</string>
+
+    <string id="160">Quality</string>
+    <string id="161">Highest</string>
+    <string id="162">High</string>
+    <string id="163">Medium</string>
+    <string id="164">Low</string>
+    
+    <string id="210">Flashback</string>
+    <string id="211">Month</string>
+    <string id="212">Day</string>
+    <string id="213">Hour</string>
+    <string id="214">Min</string>
+    <string id="215">Cam</string>
+    <string id="216">Start</string>
+
+    <string id="210">Pause</string>
+    <string id="220">Screenshot</string>
+    <string id="230">Stop</string>
+    <string id="240">Events</string>
+    <string id="250">Settings</string>
+    <string id="260">Exit</string>
+</strings>

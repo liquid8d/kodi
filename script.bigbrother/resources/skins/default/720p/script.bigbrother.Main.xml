@@ -1,0 +1,228 @@
+<window>
+    <allowoverlay>no</allowoverlay>
+    <defaultcontrol always="true">151</defaultcontrol>
+    <onload></onload>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>0</posy>
+    </coordinates>
+
+    <controls>
+        <control type="largeimage">
+            <!-- http://wiki.xbmc.org/?title=List_of_Boolean_Conditions -->
+            <visible>!Player.Playing+!Player.Seeking</visible>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1280</width>
+            <height>720</height>
+            <texture background="true">background.jpg</texture>
+            <aspectratio>scale</aspectratio>
+        </control>
+        <!-- Overlay graphics -->
+        <control type="label" id="111">
+            <info>Current Camera</info>
+            <posx>10</posx>
+            <posy>10</posy>
+            <label></label>
+            <size>128</size>
+            <textcolor>FF316cf2</textcolor>
+        </control>
+
+        <!-- Camera select -->
+        <control id="150" type="group">
+            <posx>190</posx>
+            <posy>670</posy>
+            <control type="button" id="151">
+                <info>Camera 1 Button</info>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>150</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>45</textoffsetx>
+                <label>$ADDON[script.bigbrother 151]</label>
+                <onleft>156</onleft>
+                <onright>152</onright>
+            </control>
+            <control type="button" id="152">
+                <info>Camera 2 Button</info>
+                <posx>150</posx>
+                <posy>0</posy>
+                <width>150</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>45</textoffsetx>
+                <label>$ADDON[script.bigbrother 152]</label>
+                <onclick>RunScript(special://home/addons/script.bigbrother/feeds.py, load, 2)</onclick>
+                <onleft>151</onleft>
+                <onright>153</onright>
+            </control>
+            <control type="button" id="153">
+                <info>Camera 3 Button</info>
+                <posx>300</posx>
+                <posy>0</posy>
+                <width>150</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>45</textoffsetx>
+                <label>$ADDON[script.bigbrother 153]</label>
+                <onclick>RunScript(special://home/addons/script.bigbrother/feeds.py, load, 3)</onclick>
+                <onleft>152</onleft>
+                <onright>154</onright>
+            </control>
+            <control type="button" id="154">
+                <info>Camera 4 Button</info>
+                <posx>450</posx>
+                <posy>0</posy>
+                <width>150</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>45</textoffsetx>
+                <label>$ADDON[script.bigbrother 154]</label>
+                <onclick>RunScript(special://home/addons/script.bigbrother/feeds.py, load, 4)</onclick>
+                <onleft>153</onleft>
+                <onright>155</onright>
+            </control>
+            <control type="button" id="155">
+                <info>Camera 5 Button</info>
+                <posx>600</posx>
+                <posy>0</posy>
+                <width>150</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>45</textoffsetx>
+                <label>$ADDON[script.bigbrother 155]</label>
+                <onclick>RunScript(special://home/addons/script.bigbrother/feeds.py, load, 5)</onclick>
+                <onleft>154</onleft>
+                <onright>156</onright>
+            </control>  
+            <control type="button" id="156">
+                <info>End Button</info>
+                <posx>750</posx>
+                <posy>0</posy>
+                <width>150</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>55</textoffsetx>
+                <label>$ADDON[script.bigbrother 260]</label>
+                <onleft>155</onleft>
+                <onright>151</onright>
+            </control>  
+        </control>
+        
+        <!-- Flashback  -->
+        <control id="210" type="group">
+            <posx>160</posx>
+            <posy>10</posy>
+            <visible>false</visible>
+            <control type="button" id="211">
+                <info>Month selector</info>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>160</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>33</textoffsetx>
+                <label>$ADDON[script.bigbrother 211]</label>
+                <!-- 
+                    onup - decrease month
+                    ondown increase month
+                    onleft go
+                -->
+                <onleft>216</onleft>
+                <onright>212</onright>
+            </control>
+            <control type="button" id="212">
+                <info>Day selector</info>
+                <posx>160</posx>
+                <posy>0</posy>
+                <width>160</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>33</textoffsetx>
+                <label>$ADDON[script.bigbrother 212]</label>
+                <!-- 
+                    onup - decrease day
+                    ondown increase day
+                -->
+                <onleft>211</onleft>
+                <onright>213</onright>
+            </control>
+            <control type="button" id="213">
+                <info>Hour selector</info>
+                <posx>320</posx>
+                <posy>0</posy>
+                <width>160</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>33</textoffsetx>
+                <label>$ADDON[script.bigbrother 213]</label>
+                <!-- 
+                    onup - decrease hour
+                    ondown increase hour
+                -->
+                <onleft>212</onleft>
+                <onright>214</onright>
+            </control>
+            <control type="button" id="214">
+                <info>Min selector</info>
+                <posx>480</posx>
+                <posy>0</posy>
+                <width>160</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>33</textoffsetx>
+                <label>$ADDON[script.bigbrother 214]</label>
+                <!-- 
+                    onup - decrease min
+                    ondown increase min
+                -->
+                <onleft>213</onleft>
+                <onright>215</onright>
+            </control>
+            <control type="button" id="215">
+                <info>Cam selector</info>
+                <posx>640</posx>
+                <posy>0</posy>
+                <width>160</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>33</textoffsetx>
+                <label>$ADDON[script.bigbrother 215]</label>
+                <!-- 
+                    onup - decrease min
+                    ondown increase min
+                -->
+                <onleft>214</onleft>
+                <onright>216</onright>
+            </control>
+            <control type="button" id="216">
+                <info>Camera selector</info>
+                <posx>800</posx>
+                <posy>0</posy>
+                <width>160</width>
+                <height>48</height>
+                <texturefocus>menu-item-focus.png</texturefocus>
+                <texturenofocus border="4,4,4,4">menu-item.png</texturenofocus>
+                <textoffsetx>33</textoffsetx>
+                <label>$ADDON[script.bigbrother 216]</label>
+                <onleft>215</onleft>
+                <onright>211</onright>
+            </control>
+            
+        </control>      <!-- END FLASHBACK GROUP -->
+
+    </controls>
+</window>

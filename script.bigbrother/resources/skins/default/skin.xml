@@ -1,0 +1,14 @@
+<skin>
+  <defaultresolution>720p</defaultresolution>
+  <defaultresolutionwide>720p</defaultresolutionwide>
+  <debugging>true</debugging>
+  <version>1.0</version>
+  
+  <!-- amount to zoom skin to remove overscan compensation -->
+  <zoom>0</zoom>
+  
+  <credits>
+    <skinname>default</skinname>
+    <name>liquid8d</name>
+  </credits>
+</skin>
