@@ -18,6 +18,6 @@
 		<platform>all</platform>
 		<minversion>35647</minversion>
 		<summary lang="en">Watch Big Brother Live Feeds</summary>
-		<description lang="en">Watch Big Brother Live Feeds with camera switching, flashbacks and more! *Requires valid CBS subscription.</description>
+		<description lang="en">Watch Big Brother Live Feeds *Requires valid CBS subscription.</description>
 	</extension>
 </addon>
