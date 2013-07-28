@@ -1,3 +1,6 @@
+[b]Version 1.0.2[/b]
+ - Fixed a date bug, causing previous day to show
+
 [b]Version 1.0.1[/b]
  - Added Exit button
 

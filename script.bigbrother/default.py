@@ -1,6 +1,6 @@
 import xbmc, xbmcgui, xbmcaddon
 import urllib, urllib2, cookielib, json
-import datetime, calendar
+import datetime, calendar, time
 
 # Script constants
 __scriptname__ = "Big Brother"
@@ -16,6 +16,11 @@ ACTION_PARENT_DIR = 9
 ACTION_STOP = 13
 ACTION_PREVIOUS_MENU = 10
 ACTION_NUMBER_1 = 59
+ACTION_NUMBER_2 = 60
+ACTION_NUMBER_3 = 61
+ACTION_NUMBER_4 = 62
+ACTION_NUMBER_5 = 63
+ACTION_BACKSPACE = 110
 
 #the player we will use
 class MyPlayer(xbmc.Player):
@@ -89,6 +94,9 @@ class BigBrother(xbmcgui.WindowXMLDialog):
             self.Player.stop()
             self.end()
         if action == ACTION_PARENT_DIR:
+            self.Player.stop()
+            self.end()
+        if action == ACTION_BACKSPACE:
             self.Player.stop()
             self.end()
 
@@ -191,14 +199,16 @@ class BigBrother(xbmcgui.WindowXMLDialog):
     #get the actual url to the stream
     def getStream(self):
         #we need the current date timestamp, but convert to PST first
-        bbt = calendar.timegm(datetime.datetime.utcnow().utctimetuple()) - 25200
-        pst = datetime.datetime.fromtimestamp(bbt).strftime('%m%d%y')
-        #print 'BBT: %s' % (bbt)
-        #print 'pst: %s' % (pst)
+        curdate = datetime.datetime.utcnow()
+        bbtdate = curdate - datetime.timedelta(hours=7)
+        bbtday = bbtdate.strftime('%m%d%y')
+        #print 'now: %s' % (curdate)
+        #print 'bbt: %s' % (bbtdate)
+        #print 'bbtday: %s' % (bbtday)
         for x in range(0, len(self.streamcodes)):
             print 'Checking %s: %s' % (x, self.streamcodes[x]['date'])
-            if pst in self.streamcodes[x]['date']:
-                url = 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE%s%s_%s@%s/index_%d_av-p.m3u8?sd=15&rebase=on' % (pst, self.streamcodes[x]['code'], self.camera, self.streamcodes[x]['id'], self.quality)
+            if bbtday in self.streamcodes[x]['date']:
+                url = 'http://cbsbigbrother-lh.akamaihd.net/i/BBLIVE%s%s_%s@%s/index_%d_av-p.m3u8?sd=15&rebase=on' % (bbtday, self.streamcodes[x]['code'], self.camera, self.streamcodes[x]['id'], self.quality)
                 print('url: ' + url)
                 return url
     #notification to user
