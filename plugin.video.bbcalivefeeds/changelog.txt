@@ -1,3 +1,8 @@
+[b]Version 1.0.2[/b]
+ - Update for BBCA 2014
+ - Just low quality mobile links for now
+ - No Cam 5 yet
+ 
 [b]Version 1.0.1[/b]
  - Added ALT links (mobile) since some have been having problems
  
