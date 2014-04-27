@@ -3,7 +3,7 @@
 <addon
   id="plugin.video.bbcalivefeeds"
   name="Big Brother Canada Live Feeds"
-  version="1.0.3"
+  version="1.0.4"
   provider-name="liquid8d">
   <requires>
    <import addon="xbmc.python" version="2.1.0"/>

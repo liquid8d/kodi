@@ -68,11 +68,11 @@ for x in cam_event_ids:
     try:
         count += 1
         data = download('http://new.livestream.com/api/accounts/6388794/events/' + x + '/viewing_info')
-        m3u8 = str(json.loads(data)['streamInfo']['m3u8_url'])
-        id = find_between(m3u8, '/i/', '_1@')
-        link = 'http://player.livestream-f.akamaihd.net/i/' + id + '_1@156550/master.m3u8'
+        stream = str(json.loads(data)['streamInfo']['rtsp_url'])
+        #id = find_between(m3u8, '/i/', '_1@')
+        #link = 'http://player.livestream-f.akamaihd.net/i/' + id + '_1@156550/master.m3u8'
         #mobile = 'rtsp://212-125.livestream.com:8080/livestreamiphone/' + id + '_1_150@156550'
-        addLink('Camera ' + str(count), link, 'DefaultVideo.png')
+        addLink('Camera ' + str(count), stream, 'DefaultVideo.png')
         #addLink('Camera ' + str(count) + ' (mobile alt)', mobile, 'DefaultVideo.png')
     except:
         print('error retrieving for camera ' + str(count));
